@@ -1,0 +1,39 @@
+/* 文章卡片效果 */
+.card {
+  width: 600px;
+  height: 500px;
+  text-align: center;
+  margin: 50px 300px;
+  background-color:rgba(255, 255, 255, 0.6); /* 卡片透明内容不透明 */
+  padding: 20px;
+  /* background: #f1f1f1; */                 /* 卡片内容都透明 */
+  /* filter: alpha(opacityi:30); */
+  /* opacity: 0.9; */
+}
+
+.card_picture {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  /* background-color:rgba(255, 255, 255, 0.8); */
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px #d3d1d1;
+  border-radius: 7px;
+}
+
+.card_pri {
+  width: 300px;
+  height: 270px;
+  background-color: rgba(255, 255, 225, 0.6);
+
+/* 卡片文本居中 */
+.card p,h2,h5 {
+  text-align: center;
+}
+
+/* 文章卡片图片设置 */
+.card_picture_img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}

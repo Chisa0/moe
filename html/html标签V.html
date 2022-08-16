@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>html标签V</title>
+</head>
+<body>
+  <h2>表单form</h2>
+  <ul>
+    <li>文本框、密码框input----text password</li>
+    <li>提交、重置按钮input----submit、reset </li>
+    <li>单选框、复选框input----radio &nbsp; checkbox</li>
+    <li>下拉列表框select &nbsp; option</li>
+    <li>文本域Textarea</li>
+  </ul>
+  <form action="数据处理网页">
+    账户: 
+    <input type="text" name="username" />
+    <br />
+    密码: 
+    <input type="password" name="userpsd" />
+    <input type="submit" value="提交" name="submit" />
+    <input type="reset" value="重置" name="reset" />
+    <br />
+    性别：
+    男   <input type="radio" value="boy" name="gender" checked="checked" />
+    女   <input type="radio" value="girl" name="gender" />
+    <br />
+    爱好:
+    <input type="checkbox" value="1" name="music" checked="checkded" /> 音乐
+    <input type="checkbox" value="2" name="sport" /> 体育
+    <input type="checkbox" value="3" name="reading" /> 阅读
+    <br />
+    爱好:
+    <select>
+      <option>看书</option>
+      <option selected="selected">旅游</option>
+      <option>运动</option>
+      <option>购物</option>
+    </select>
+    <br />
+    <br />
+    个人简介 : <br />
+    <textarea cols="50" rows="10" >
+                  在这里输入内容...
+    </textarea>
+    <input type="submit" value="确定" />
+    <input type="reset" value="重置" />
+  </form>
+</body>
+</html>
