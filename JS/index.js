@@ -13,4 +13,4 @@ function scrollFunction() {console.log(121);
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}
+} 

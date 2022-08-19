@@ -5,12 +5,17 @@
 <title>0</title>
 <link rel="shortcut icon " href="../imgs/megumi_3.ico">
 <link rel="stylesheet" type="text/css" href="../CSS/layout_2.css">
+<link rel="stylesheet" type="text/css" href="../CSS/bubbles.css">
+<link rel="stylesheet" type="text/css" href="../CSS/search.css">
+<link rel="stylesheet" type="text/css" href="../CSS/my_search.css">
+<script src="https://unpkg.com/lunr/lunr.js"></script>
 <script src="../JS/title.js"></script>
 <script src="../JS/index.js"></script>
+<script type="text/javascript" src="../node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
 </head>
 <body>
 
-<button onclick="topFunction()" id="myBtn" title="回顶部">置顶</button>
+  <button onclick="topFunction()" id="myBtn" class="ripple-effect" title="回顶部">置顶<span class="ripple"></span></button>
 
 <!--<div class="header">
   <h1>我的网页</h1>
@@ -20,14 +25,14 @@
 <div class="topnav">
   <a href="/">index</a>
   <a href="/html/html.html">html</a>
-  <a href="/html/audio.html">music</a>
+  <a href="/html/music.html">music</a>
   <a href="/html/video.html">video</a>
   <a href="/html/about.html" style="float:right">about</a>
 </div>
 
-<div class="row">
+<div  class="row">
   <div class="leftcolumn">
-    <div class="card">
+    <div id="文章标题" class="card essay">
       <a href="#">
         <div>
           <h2>文章标题</h2>
@@ -38,22 +43,40 @@
       </a>
     </div>
 
-    <div class="card">
+    <div id="title" class="card essay">
       <a href="#">
         <div>
-          <h2>文章标题</h2>
+          <h2>title</h2>
           <h5>2022-8-13</h5>
             <div class="card_picture"><img class="card_picture_img" src="../imgs/background/background_5.jpeg"></div>
           <p>文本</p>
         </div>
       </a>
     </div>
+    <div id="baidu" class="card essay">
+      <a href="http://baidu.com">
+        <div>
+          <h2>baidu</h2>
+          <h5>2022-8-18</h5>
+            <div class="card_picture"><img class="card_picture_img" src="../imgs/background/background_5.jpeg"></div>
+          <p>问问度娘</p>
+        </div>
+        </a>
+     </div>
   </div>
   <div class="rightcolumn">
-    <div class="card">
-      <h2>关于我</h2>
-      <div class="fakeimg" style="height:100px;">图片</div>
-      <p>关于我的一些信息..</p>
+    <form>
+        <input type="text" id="search" class="input-box"
+        oninput="my_main()"  placeholder="搜索...">
+    </form>
+    <div id="search_area"></div>
+    <div class="pri">
+      <div class="pri_txt">
+        <h3>chisa</h3>
+      </div>
+      <div class="card_pri">
+        <img class="card_picture_img" src="../imgs/4.jpeg">
+      </div>
     </div>
     <div class="card">
       <h3>热门文章</h3>
@@ -81,5 +104,18 @@
  <i>©2022 Chisa Powered</i>
 </div>
 
+<section></section>
+
+<script>
+  VanillaTilt.init(document.querySelectorAll(".card"),{
+    max: 12,         //最大倾斜角度
+    speed: 300,      //倾斜转换速度
+    glare: true,     //是否开启炫光效果
+    "max-glare": 1   //最大炫光的不透明度
+  })
+</script>
+<script src="../JS/bubbles.js"></script>
 </body>
+<script src="../JS/ripple.js"></script>
+<script src="../JS/my_search.js"></script>
 </html>
