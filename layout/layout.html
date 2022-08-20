@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文章模板</title>
+<link rel="shortcut icon " href="../imgs/megumi_3.ico">
+<link rel="stylesheet" type="text/css" href="../CSS/layout_2.css">
+<link rel="stylesheet" type="text/css" href="../CSS/search.css">
+<link rel="stylesheet" type="text/css" href="../CSS/my_search.css">
+<link rel="stylesheet" type="text/css" href="../CSS/essay.css">
+<!--<link rel="stylesheet" type="text/css" href="../JS/highlight/styles/qtcreator-dark.min.css">-->
+<link rel="stylesheet" type="text/css" href="../JS/highlight/styles/isbl-editor-dark.min.css">
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="../JS/title.js"></script>
+<script src="../JS/highlight/highlight.min.js"></script>
+<script src="../JS/highlight/languages/dart.min.js"></script>
+<script src="../node_modules/highlightjs-line-numbers.js/src/highlightjs-line-numbers.js"></script>
+<script type="text/javascript" src="../node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" class="ripple-effect" title="
+  回顶部">置顶<span class="ripple"></span></button>
+
+  <nav class="topnav">
+    <li><a href="../html/moe.html">index</a></li>
+    <li><a href="../categories/issue.html">issue</a></li>
+    <li><a href="../html/html.html">html</a></li>
+    <li><a href="../html/music.html">music</a></li>
+    <li><a href="../html/video.html">video</a></li>
+    <li><a href="../html/about.html" style="float:right">about</a></li>
+  </nav>
+
+  <div  class="row">
+    <div class="leftcolumn">
+      <div class="post_essay">
+        <h1>文章标题</h1>
+      </div>
+      <div class="post_essay_p">
+        <p>
+          <h3>文章模板</h3>  
+          <hr>
+          <h4>文字效果</h4>
+          这是文字这是文字这是文字这是文字这是文字这是文字
+          这是文字这是文字这是文字这是文字这是文字这是文字
+          这是文字这是文字这是文字这是文字这是文字这是文字
+          <hr>
+          <h4>代码效果</h4>
+          <pre>
+            <code> for i in range(5):
+ print(i)
+            </code>
+          </pre>
+          <hr>
+          <h4>参考</h4>
+          <a href="https://highlightjs.org/usage/">how to use highlightjs</a>
+        </p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+        <form>
+            <input type="text" id="search" class="input-box"
+            oninput="my_main()"  placeholder="搜索...">
+        </form>
+        <div id="search_area"></div>
+        <div class="pri">
+          <div class="pri_txt">
+            <h3>chisa</h3>
+          </div>
+          <div class="card_pri">
+            <img class="card_picture_img" src="../imgs/2.jpg">
+          </div>
+        </div>
+        <div class="recent_essay">
+          <div class="recent_name"><i>近期文章</i></div>
+          <div class="recent_a"></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div style="text-align: center;">
+      <ul class="pagination">
+        <li><a href="#"> << </a></li>
+        <li><a href="/">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#"> >> </a></li>
+      </ul>
+   </div>
+   <i>©2022 Chisa Powered</i>
+  </div>
+</body>
+<script src="../JS/my_search.js"></script>
+<script src="../JS/index.js"></script>
+<script src="../JS/ripple.js"></script>
+<script src="../JS/commentTyping.js"></script>
+<script>
+  hljs.highlightAll();
+  //hljs.initHighlightingOnLoad()
+  hljs.highlightAll();
+  hljs.initLineNumbersOnLoad();
+</script>
+</html>

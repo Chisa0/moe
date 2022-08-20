@@ -10,7 +10,6 @@
 <link rel="stylesheet" type="text/css" href="../CSS/my_search.css">
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script src="../JS/title.js"></script>
-<script src="../JS/index.js"></script>
 <script type="text/javascript" src="../node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
 </head>
 <body>
@@ -22,16 +21,35 @@
   <p>重置浏览器大小查看效果。</p>
 </div>-->
 
-<div class="topnav">
-  <a href="/">index</a>
-  <a href="/html/html.html">html</a>
-  <a href="/html/music.html">music</a>
-  <a href="/html/video.html">video</a>
-  <a href="/html/about.html" style="float:right">about</a>
-</div>
+<nav class="topnav">
+  <li><a href="../html/moe.html">index</a></li>
+  <li><a href="../categories/issue.html">issue</a></li>
+  <li><a href="../html/html.html">html</a></li>
+  <li><a href="../html/music.html">music</a></li>
+  <li><a href="../html/video.html">video</a></li>
+  <li><a href="../html/about.html" style="float:right">about</a></li>
+</nav>
 
 <div  class="row">
   <div class="leftcolumn">
+    <div id="香橙派链接oled屏幕" class="card essay">
+      <a href="../post/香橙派链接oled屏幕.html">
+        <div>
+          <h2>香橙派链接oled屏幕</h2>
+          <h5>2022-8-20</h5>
+          <div class="card_picture"><img class="card_picture_img" src="../imgs/background/background_16.jpg"></div>
+        </div>
+      </a>
+    </div>
+    <div id="香橙派网盘服务" class="card essay">
+      <a href="../post/香橙派网盘服务.html">
+        <div>
+          <h2>香橙派网盘服务</h2>
+          <h5>2022-8-20</h5>
+          <div class="card_picture"><img class="card_picture_img" src="../imgs/background/background_2.jpg"></div>
+        </div>
+      </a>
+    </div>
     <div id="文章标题" class="card essay">
       <a href="#">
         <div>
@@ -47,19 +65,19 @@
       <a href="#">
         <div>
           <h2>title</h2>
-          <h5>2022-8-13</h5>
+          <h5>2022-8-14</h5>
             <div class="card_picture"><img class="card_picture_img" src="../imgs/background/background_5.jpeg"></div>
           <p>文本</p>
         </div>
       </a>
     </div>
-    <div id="baidu" class="card essay">
-      <a href="http://baidu.com">
+    <div id="文章模板" class="card essay">
+      <a href="../layout/layout.html">
         <div>
-          <h2>baidu</h2>
-          <h5>2022-8-18</h5>
+          <h2>文章模板</h2>
+          <h5>2022-8-19</h5>
             <div class="card_picture"><img class="card_picture_img" src="../imgs/background/background_5.jpeg"></div>
-          <p>问问度娘</p>
+          <p>文章模板</p>
         </div>
         </a>
      </div>
@@ -75,18 +93,22 @@
         <h3>chisa</h3>
       </div>
       <div class="card_pri">
-        <img class="card_picture_img" src="../imgs/4.jpeg">
+        <img class="card_picture_img" src="../imgs/2.jpg">
       </div>
     </div>
-    <div class="card">
-      <h3>热门文章</h3>
-      <div class="fakeimg"><p>图片</p></div>
-      <div class="fakeimg"><p>图片</p></div>
-      <div class="fakeimg"><p>图片</p></div>
+    <div class="recent_essay">
+      <div class="recent_name"><i>近期文章</i></div>
+      <div class="recent_a"></div>
     </div>
-    <div class="card">
-      <h3>关注我</h3>
-      <p>一些文本...</p>
+    <!--<div class="random_essay">
+      <div class="random_name"><i>随机文章</i></div>
+      <div class="rabdom_a">
+        <li><a target="_blank" href="http://www.baidu.com">baidu</a></li>
+        <li><a target="_blank" href="http://www.baidu.com">baidu</a></li>
+        <li><a target="_blank"></a></li>
+        <li><a target="_blank"></a></li>
+        <li><a target="_blank"></a></li>
+      </div>-->
     </div>
   </div>
 </div>
@@ -116,6 +138,8 @@
 </script>
 <script src="../JS/bubbles.js"></script>
 </body>
-<script src="../JS/ripple.js"></script>
 <script src="../JS/my_search.js"></script>
+<script src="../JS/index.js"></script>
+<script src="../JS/ripple.js"></script>
+<script src="../JS/commentTyping.js"></script>
 </html>

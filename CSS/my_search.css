@@ -16,3 +16,7 @@
 #search_area a:hover {
     color: 	#00FFFF;
 }
+
+.essay>a {
+    target: '_blank';
+  }

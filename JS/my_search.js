@@ -71,6 +71,7 @@ function my_main() {
   for (let i=0;i<y.length;i++) {
     a_link[i].innerText = y[i]
     a_link[i].href = find_link(y[i])
+    a_link[i].target = "_blank"
     a_link[i].classList.add('search_link')
     area.appendChild(a_link[i])
     var br=document.createElement("div");

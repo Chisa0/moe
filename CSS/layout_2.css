@@ -33,8 +33,13 @@
   /* 导航条 */
   .topnav {
     overflow: hidden;
-    background-color:rgba(0, 0, 0, 0.15);*/
+    list-style: none;
+    background-color:rgba(0, 0, 0, 0.15);
     /*background-image: linear-gradient(to bottom, rgba(204,229,255,0.9), rgba(204,229,255,0.5));*/
+  }
+
+  .topnav nav {
+    display: none;
   }
    
   /* 导航条链接 */
@@ -95,6 +100,7 @@
     color: #7B86EE;
   }
 
+  /*头像区域样式*/
   .pri {
     background-color: rgba(255, 255, 255 , 0.5); 
     margin-top: 30px;
@@ -126,6 +132,34 @@
 
   .pri_txt>h3 {
     margin: auto;
+  }
+  
+  /*最近文章样式*/
+  .recent_essay {      
+    background-color: rgba(255, 255, 255 , 0.5); 
+    margin-top: 30px;
+    float: left; 
+    display: block; 
+    padding: 14px 16px; 
+    width: 100%;
+    margin-bottom:10px; 
+    text-align: left;
+  }
+
+  .recent_name {
+    margin-bottom: 10px;
+  }
+
+  .recent_a {
+    list-style: none;
+  }
+
+  .recent_a a {
+    text-decoration:none
+  }
+
+  .recent_a a:hover {
+    color: 	#00FFFF;
   }
 
   /*.card {

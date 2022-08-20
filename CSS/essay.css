@@ -1,0 +1,17 @@
+.post_essay {
+    text-align: center;
+}
+
+.post_essay_p {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 9px;
+  padding: 15px;
+}
+
+.post_essay_p p,h1,h2,h3,h4,h5,h6 {
+    color: black;
+}
+
+.essay>a {
+  target: _blank;
+}

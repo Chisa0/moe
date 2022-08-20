@@ -4,23 +4,61 @@
   <meta charset="utf-8">
   <title>about</title>
   <link rel="stylesheet" type="text/css" href="/CSS/layout_2.css">
+  <link rel="shortcut icon " href="../imgs/megumi_3.ico">
+<link rel="stylesheet" type="text/css" href="../CSS/layout_2.css">
+<link rel="stylesheet" type="text/css" href="../CSS/search.css">
+<link rel="stylesheet" type="text/css" href="../CSS/my_search.css">
+<link rel="stylesheet" type="text/css" href="../CSS/essay.css">
+<!--<link rel="stylesheet" type="text/css" href="../JS/highlight/styles/qtcreator-dark.min.css">-->
+<link rel="stylesheet" type="text/css" href="../JS/highlight/styles/isbl-editor-dark.min.css">
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="../JS/title.js"></script>
+<script src="../JS/highlight/highlight.min.js"></script>
+<script src="../JS/highlight/languages/dart.min.js"></script>
+<script src="../node_modules/highlightjs-line-numbers.js/src/highlightjs-line-numbers.js"></script>
+<script type="text/javascript" src="../node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
 </head>
 <body>
-  <!--<ul>
-    <li><a class="active" href="/html/index.html">index</a></li>
-    <li><a href="/html/html.html">html</a></li>
-    <li><a href="/html/audio.html">music</a></li>
-    <li><a href="/html/video.html">video</a></li>
-    <li style="float:right"><a href="/html/about.html">about</a></li>
-  </ul>-->
+  <button onclick="topFunction()" id="myBtn" class="ripple-effect" title="
+  回顶部">置顶<span class="ripple"></span></button>
+  <nav class="topnav">
+    <li><a href="../html/moe.html">index</a></li>
+    <li><a href="../categories/issue.html">issue</a></li>
+    <li><a href="../html/html.html">html</a></li>
+    <li><a href="../html/music.html">music</a></li>
+    <li><a href="../html/video.html">video</a></li>
+    <li><a href="../html/about.html" style="float:right">about</a></li>
+  </nav>
 
-  <div class="topnav">
-  <a href="/">index</a>
-  <a href="/html/html.html">html</a>
-  <a href="/html/audio.html">music</a>
-  <a href="/html/video.html">video</a>
-  <a href="/html/about.html" style="float:right">about</a>
+  <div  class="row">
+    <div class="leftcolumn">
+      <p>about</p>
+    </div>
+    <div class="rightcolumn">
+      <form>
+          <input type="text" id="search" class="input-box"
+          oninput="my_main()"  placeholder="搜索...">
+      </form>
+      <div id="search_area"></div>
+      <div class="pri">
+        <div class="pri_txt">
+          <h3>chisa</h3>
+        </div>
+        <div class="card_pri">
+          <img class="card_picture_img" src="../imgs/2.jpg">
+        </div>
+      </div>
+      <div class="recent_essay">
+        <div class="recent_name"><i>近期文章</i></div>
+        <div class="recent_a"></div>
+      </div>
   </div>
-
+  </div>
+</div>
+</div>
 </body>
+<script src="../JS/my_search.js"></script>
+<script src="../JS/index.js"></script>
+<script src="../JS/ripple.js"></script>
+<script src="../JS/commentTyping.js"></script>
 </html>
