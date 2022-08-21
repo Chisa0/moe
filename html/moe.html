@@ -14,7 +14,11 @@
 </head>
 <body>
 
-  <button onclick="topFunction()" id="myBtn" class="ripple-effect" title="回顶部">置顶<span class="ripple"></span></button>
+  <div class="to_top">
+  <button onclick="topFunction()" id="myBtn" class="ripple-effect" title="回顶部">
+    <span class="ripple"></span>
+  </button>
+  </div>
 
 <!--<div class="header">
   <h1>我的网页</h1>
@@ -23,7 +27,7 @@
 
 <nav class="topnav">
   <li><a href="../html/moe.html">index</a></li>
-  <li><a href="../categories/issue.html">issue</a></li>
+  <li><a onclick="show_class_essay('.issue')">issue</a></li>
   <li><a href="../html/html.html">html</a></li>
   <li><a href="../html/music.html">music</a></li>
   <li><a href="../html/video.html">video</a></li>
@@ -32,7 +36,7 @@
 
 <div  class="row">
   <div class="leftcolumn">
-    <div id="香橙派链接oled屏幕" class="card essay">
+    <div id="香橙派链接oled屏幕" class="card essay issue">
       <a href="../post/香橙派链接oled屏幕.html">
         <div>
           <h2>香橙派链接oled屏幕</h2>
@@ -116,11 +120,8 @@
 <div class="footer">
   <div style="text-align: center;">
     <ul class="pagination">
-      <li><a href="#"> << </a></li>
-      <li><a href="/">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#"> >> </a></li>
+      <li><a onclick="page_show(1)">1</a></li>
+      <li><a onclick="page_show(2)">2</a></li>
     </ul>
  </div>
  <i>©2022 Chisa Powered</i>

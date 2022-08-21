@@ -1,11 +1,13 @@
-// 当网页向下滑动 20px 出现"返回顶部" 按钮
+// 当网页向下滑动 46px 出现"返回顶部" 按钮
 window.onscroll = function() {scrollFunction()};
  
 function scrollFunction() {console.log(121);
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 46 || document.documentElement.scrollTop > 46) {
         document.getElementById("myBtn").style.display = "block";
+        document.querySelector('.to_top').style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
+        document.querySelector('.to_top').style.display = "none";
     }
 }
  
@@ -94,4 +96,34 @@ var true_title = document.title
     }
   }
   
-create_sort_essay(3)
+create_sort_essay(4)
+
+//隐藏主页文章
+function page_hide() {
+  var essays = document.querySelectorAll('.essay')
+  for (let i=0;i<essays.length;i++) {
+    essays[i].style.display = "none"
+  }
+}
+
+//显示第num页文章
+function page_show(num) {
+  page_hide()
+  var id_time = find_recent_essay()
+  var sort_essay = id_time.sort(my_sort('time',false))
+  for (let i=(num-1)*3;i<3*num;i++) {
+    var essay = document.getElementById(sort_essay[i].id)
+    essay.style.display = "block"
+  }
+}
+
+page_show(1)
+
+//显示某类文章
+function show_class_essay(essay_calss) {
+  page_hide()
+  var essay = document.querySelectorAll(essay_calss)
+  for (let i=0;i<essay.length;i++) {
+    essay[i].style.display = "block"
+  }
+}

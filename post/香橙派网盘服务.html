@@ -37,6 +37,38 @@
       </div>
       <div class="post_essay_p">
         <p>
+          <h3>脚本安装</h3>
+	  <hr>
+	  <pre><code>curl -fsSL "https://nn.ci/alist.sh" | bash -s install</code></pre>
+	  通过防火墙
+	  <pre><code>ufw allow 5244</code></pre>
+	  <hr>
+	  <h3>配置</h3>
+	  <hr>
+          配置文件路径
+	  <pre><code>/opt/alist/data/config.json</code></pre>
+	  添加本地地址
+	  <pre><code>"local_assets":"local_address"</code></pre>
+	  访问地址
+	  <pre><code>http://your_ip:5244</code></pre>
+	  添加账号后即可使用网盘
+	  <hr>
+	  <h3>管理</h3>
+          查看状态
+          <pre><code>systemctl status alist</code></pre>
+	  启动服务
+          <pre><code>systemctl start alist</code></pre>
+	  重启服务
+          <pre><code>systemctl restart alist</code></pre>
+	  停止服务
+          <pre><code>systemctl stop alist</code></pre>
+	  开机自启
+	  <pre><code>systemctl enable alist</code></pre>
+	  <hr>
+	  <h3>添加密码</h3>
+	  <hr>
+	  点击 元信息--> 添加，其中/表示网盘根目录,设好密码保存即可
+	  <hr>
           <h4>参考</h4>
           <a href="https://alist-doc.nn.ci/docs/intro">官方文档</a>
           <br />
