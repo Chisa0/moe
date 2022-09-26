@@ -34,18 +34,22 @@ function a_new_window() {
 a_new_window()
 
 //切换标签页时改变title
-var true_title = document.title          
+var true_title = document.title       
+var cg_title=[]  
+cg_title[0]=['(｡･ω･｡)ﾉ♡我藏起来了','ヾ(≧O≦)〃嗷~被发现了'] 
+
   function change_title() {
+    i = 0
     function change_1(val) {
         document.title = val
       }
     if (window.document.visibilityState == "hidden") {
       var t = Math.random()*20*1000
-      change_1('(｡･ω･｡)ﾉ♡我藏起来了')
-      //setTimeout(() => change_1('我藏起来了'), t)
-  } 
-  if (window.document.visibilityState == "visible" && document.title =='(｡･ω･｡)ﾉ♡我藏起来了') {
-    document.title = 'ヾ(≧O≦)〃嗷~被发现了'
+      change_1(cg_title[i][0])
+
+} 
+  if (window.document.visibilityState == "visible" && document.title ==cg_title[i][0]) {
+    document.title = cg_title[i][1]
     setTimeout(() => change_1(true_title), 3000)
   }
   }
